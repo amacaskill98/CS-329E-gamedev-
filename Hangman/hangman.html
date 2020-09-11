@@ -1,3 +1,54 @@
 <!doctype html>
 <html>
+<head>
+  <link rel="stylesheet" href="hangman.css">
+  <script src="hangman.js" defer></script>
+</head>
+<div class="title">
+  <h1>Let's play Hangman!</h1>
+</div>
+<div class="prompt" id="p1">
+  <p>Player 1, please input the secret word:</p>
+  <p>(Please do not use any slang words or proper nouns)</p>
+  <input type="password" id="secretWord">
+</div>
+<div class="prompt" id="p2">
+  <p>Player 2, please input a guess for a letter or the secret word:</p>
+  <input type="text" id="guess">
+</div>
+<div class = "container">
+  <div class= "overlay">
+    <img src = "assets/Hangman head.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman body.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman armL.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman armR.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman legR.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman legL.png">
+  </div>
+  <div class= "overlay">
+    <img src = "assets/Hangman dead.png">
+  </div>
+  <div class= "overlay overlay-raise">
+    <img src = "assets/Hangman scaffold.png">
+  </div>
+</div>
+<div class="prompt" id="word">
+  _ _ _ _ _ _ _ _ _
+</div>
+<br>
+<br>
+<div class="prompt" id="guesses">
+  Guessed letters/phrases: 
+</div>
+
 </html>
